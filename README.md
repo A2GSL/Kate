@@ -6,7 +6,7 @@ Here a snippet of a simple alpha strategy based on [101 Formulaic](https://arxiv
 
 
 ```
-from KATE.AlphaBase import *
+from KatePublic.Intraday.AlphaBase import *
 
 class Alpha(Intraday): 
 
