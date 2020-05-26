@@ -115,7 +115,7 @@ alpha005 -0.2449
 alpha011 -0.3747
 ```
 
-Also you can get a pnl curve and the drawdown during this period, as we can see, this alpha factor works pretty good in the past, but relatively weak in recent two years. Because Chinese A-share market style has changed a lot.
+Also, you can get a pnl curve and the drawdown during this period, as we can see, this alpha factor works pretty good in the past, but relatively weak in recent two years, that is because Chinese A-share market style has changed a lot.
 ![pnl curve](/resource/sim.png)
 
 ## Portfolio Analysis
@@ -127,7 +127,7 @@ corr = corr[corr.index]
 corr.style.background_gradient(cmap='coolwarm').set_precision(3)
 ```
 
-We poolCorr.py will generate a correlation matrix, that tells the correlation among your alpha factors.
+The poolCorr.py will generate a correlation matrix, that tells the correlation among your alpha factors.
 ![corr matrix](/resource/corrmat.png)
 
 
