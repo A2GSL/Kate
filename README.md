@@ -120,4 +120,16 @@ Also you can get a pnl curve and the drawdown during this period, as we can see,
 
 ## Portfolio Analysis
 
+```
+corr = pd.read_csv("poolCorr.csv", index_col=0)
+corr = corr.sort_values("alpha008", ascending=False)
+corr = corr[corr.index]
+corr.style.background_gradient(cmap='coolwarm').set_precision(3)
+```
+
+We poolCorr.py will generate a correlation matrix, that tells the correlation among your alpha factors.
+![corr matrix](/resource/corr.png)
+
+
+
 To be continued
