@@ -1,5 +1,3 @@
-
-
 Kate (short for Kai alpha trading engine) is a extreme light Python algorithmic backtesting framework supporting multiple securities. There are already many similar and excellent backtesting packages and platform using Python. Like RiceQuant' rqalpha, Quantopian' zipline etc. 
 
 Kate's advantage is that it's extremely easy to use and require almost zero learning cost. However, there is always trade-off, that means it might not be very flexible compares to other platforms (though you can always find your way to hack :P)
@@ -126,7 +124,7 @@ alpha005 -0.2449
 alpha011 -0.3747
 ```
 
-Also you can get a pnl curve and the drawdown during this period, as we can see, this alpha factor works pretty good in the past, but relatively weak in recent two years. Because Chinese A-share market style has changed a lot.
+Also, you can get a pnl curve and the drawdown during this period, as we can see, this alpha factor works pretty good in the past, but relatively weak in recent two years, that is because Chinese A-share market style has changed a lot.
 ![pnl curve](/resource/sim.png)
 
 ## Portfolio Analysis
@@ -139,8 +137,7 @@ corr.style.background_gradient(cmap='coolwarm').set_precision(3)
 ```
 
 We poolCorr.py will generate a correlation matrix, that tells the correlation among your alpha factors.
-![corr matrix](/resource/corr.png)
-
+![corr matrix](/resource/corrmat.png)
 
 
 To be continued
