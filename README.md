@@ -128,7 +128,7 @@ corr.style.background_gradient(cmap='coolwarm').set_precision(3)
 ```
 
 We poolCorr.py will generate a correlation matrix, that tells the correlation among your alpha factors.
-![corr matrix](/resource/corr.png)
+![corr matrix](/resource/corrmat.png)
 
 
 
