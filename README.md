@@ -110,4 +110,6 @@ alpha005 -0.2449
 alpha011 -0.3747
 ```
 
-![pnl curve](sim.png)
+Also you can get a pnl curve and the drawdown during this period, as we can see, this alpha factor works pretty good in the past, but relatively weak in recent two years. Because Chinese A-share market style has changed a lot.
+
+![pnl curve](/resource/sim.png)
