@@ -109,3 +109,5 @@ alpha010 -0.1736
 alpha005 -0.2449
 alpha011 -0.3747
 ```
+
+![pnl curve](sim.png)
