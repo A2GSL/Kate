@@ -63,4 +63,49 @@ Basically, all you need to do is filling the alpha formula part. Then it will gi
 [0:00:49.174987] 2012-08-31 excess return:  1.0265      cumulative return:  1.7206      winning rate:  0.6522
 [0:00:50.854428] 2012-09-28 excess return:  1.0128      cumulative return:  1.7426      winning rate:  0.6500
 [0:00:52.406748] 2012-10-31 excess return:  1.0280      cumulative return:  1.7913      winning rate:  0.8889
+......
+```
+After the simulation, it will also report annual performance and correlation with existing alphas in the pool.
+```
+         Sharpe      long     short  bp(hedged)    return
+year                                                    
+2010  5.829159  0.442518  0.098524   11.494467  0.315927
+2011  4.196314 -0.181778 -0.303090    6.833902  0.180431
+2012  4.209962  0.176035 -0.002807    7.026532  0.185109
+2013  7.017223  0.635077  0.203825   13.083687  0.363633
+2014  7.976088  1.002772  0.398076   14.872062  0.437678
+2015  6.954556  2.479241  0.844824   26.695126  0.907931
+2016  5.241277  0.119790 -0.125724   10.588106  0.293001
+2017  1.354061 -0.127816 -0.191324    3.490040  0.086659
+2018  3.479868 -0.199106 -0.331611    7.839104  0.207887
+2019  0.433547  0.203225  0.188202    0.795438  0.018548
+2020  1.045316  0.078843  0.057552    3.004921  0.023781 
+
+            corr
+alpha008  1.0000
+alpha020  0.8368
+alpha007  0.7604
+alpha021  0.6901
+alpha022  0.6790
+alpha012  0.6554
+alpha013  0.6305
+alpha015  0.5179
+alpha018  0.5160
+alpha019  0.4989
+alpha003  0.4265
+alpha014  0.3362
+alpha016  0.2488
+alpha009  0.2427
+alpha002  0.2381
+alpha001  0.2238
+alpha017  0.1936
+alpha026  0.0959
+alpha024 -0.0175
+alpha025 -0.0859
+alpha006 -0.0981
+alpha023 -0.1262
+alpha004 -0.1467
+alpha010 -0.1736
+alpha005 -0.2449
+alpha011 -0.3747
 ```
