@@ -13,7 +13,7 @@ An alpha is considered one of good quality when:
 > - It is not sensitive to small changes in data and parameters.   
 > - It works in multiple universes.
 > - It works in different regions.
-> - Its profi t hits a recent new high. 
+> - Its profit hits a recent new high. 
 
 
 Here a snippet of a simple alpha strategy based on [101 Formulaic](https://arxiv.org/ftp/arxiv/papers/1601/1601.00991.pdf) Alpha#42: `(rank((vwap - close)) / rank((vwap + close)))`
