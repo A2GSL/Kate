@@ -160,16 +160,9 @@ Copyright (C) 2020 Kai Xiang
 [0:01:44.721175] 2015-08-31 excess return:  1.0837      cumulative return:  1.5406      winning rate:  0.7143
 [0:01:57.571873] 2015-09-30 excess return:  1.0834      cumulative return:  1.6692      winning rate:  0.8000
 [0:02:08.698180] 2015-10-30 excess return:  1.0556      cumulative return:  1.7620      winning rate:  0.8235
-[0:02:22.151156] 2015-11-30 excess return:  1.0829      cumulative return:  1.9080      winning rate:  0.8571
-[0:02:37.073490] 2015-12-31 excess return:  1.0576      cumulative return:  2.0178      winning rate:  0.8696
-[0:02:50.308765] 2016-01-29 excess return:  1.0337      cumulative return:  2.0859      winning rate:  0.7000
-[0:03:00.844664] 2016-02-29 excess return:  0.9994      cumulative return:  2.0846      winning rate:  0.5625
-[0:03:15.973547] 2016-03-31 excess return:  1.0320      cumulative return:  2.1514      winning rate:  0.6957
-[0:03:28.948861] 2016-04-29 excess return:  1.0368      cumulative return:  2.2305      winning rate:  0.9000
-[0:03:42.556517] 2016-05-31 excess return:  0.9961      cumulative return:  2.2219      winning rate:  0.4762
-[0:03:55.552427] 2016-06-30 excess return:  1.0388      cumulative return:  2.3082      winning rate:  0.9000
-[0:04:09.145955] 2016-07-29 excess return:  1.0318      cumulative return:  2.3817      winning rate:  0.7619
-[0:04:24.598239] 2016-08-31 excess return:  1.0280      cumulative return:  2.4484      winning rate:  0.7826
+......
+
+
 
          Sharpe      long     short  bp(hedged)    return        ir
 year                                                              
