@@ -46,7 +46,7 @@ Basically, all you need to do is filling the alpha formula part. Then it will gi
 
 Welcome to Kate version 2.0.1 (2020-05-25)
 
- * Documentation:   https://github.com/kaiCbs/KatePublic
+ * Documentation:   https://github.com/kaiCbs/Kate
  * Support:         kx2153@gsb.columbia.edu
 
 Copyright (C) 2020 Kai Xiang
@@ -144,7 +144,7 @@ We can assign a dynamic weight to all our factor values, ideally it will have be
 
 Welcome to Kate version 2.0.1 (2020-05-25)
 
- * Documentation:   https://github.com/kaiCbs/KatePublic
+ * Documentation:   https://github.com/kaiCbs/Kate
  * Support:         kx2153@gsb.columbia.edu
 
 Copyright (C) 2020 Kai Xiang
