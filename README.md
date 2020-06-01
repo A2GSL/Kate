@@ -43,6 +43,14 @@ Basically, all you need to do is filling the alpha formula part. Then it will gi
 
 ```
 (/home/highfort/.conda/KaiWork) highfort@f9f874b32b8e:~/project$ python alphaPools/alpha20.py 
+
+Welcome to Kate version 2.0.1 (2020-05-25)
+
+ * Documentation:   https://github.com/kaiCbs/KatePublic
+ * Support:         kx2153@gsb.columbia.edu
+
+Copyright (C) 2020 Kai Xiang
+
 [0:00:01.337949] 2010-01-29 excess return:  1.0076      cumulative return:  1.0076      winning rate:  0.4737
 [0:00:02.362246] 2010-02-26 excess return:  1.0156      cumulative return:  1.0233      winning rate:  0.7333
 [0:00:03.903434] 2010-03-31 excess return:  1.0263      cumulative return:  1.0502      winning rate:  0.7826
@@ -105,7 +113,13 @@ alpha011 -0.3444   1.9009  0.0368
 Also, you can get a pnl curve and the drawdown during this period, as we can see, this alpha factor works pretty good in the past, but relatively weak in recent two years, that is because Chinese A-share market style has changed a lot after 2018.
 ![pnl curve](/resource/simResult.png)
 
-## Portfolio Analysis
+
+## Multi-Factor Strategy Design
+
+
+### Alpha factor correlation analysis
+
+In order to reduce the risk exposure and take full advantage of the premium against the market from evert single factor, but first of all, we want to the correlation among our factors as low as possible, so each of them might have a relatively high "marginal" contribution.
 
 ```
 corr = pd.read_csv("poolCorr.csv", index_col=0)
@@ -114,9 +128,74 @@ corr = corr[corr.index]
 corr.style.background_gradient(cmap='coolwarm').set_precision(3)
 ```
 
-We poolCorr.py will generate a correlation matrix, that tells the correlation among your alpha factors.
+We poolCorr.py will generate a correlation matrix, that tells the correlation among our alpha factors.
 
 ![corr matrix](/resource/corrmat.png)
 
 
-To be continued
+### Dynamic allocated weights
+
+We can assign a dynamic weight to all our factor values, ideally it will have better properties compares to any single factor in the terms of maximum drawdown, sharpe, return etc.
+
+
+
+```
+(/home/highfort/.conda/KaiWork) highfort@f9f874b32b8e:~/project$ python portfolio.py
+
+Welcome to Kate version 2.0.1 (2020-05-25)
+
+ * Documentation:   https://github.com/kaiCbs/KatePublic
+ * Support:         kx2153@gsb.columbia.edu
+
+Copyright (C) 2020 Kai Xiang
+
+
+[0:00:12.941444] 2015-01-30 excess return:  1.0348      cumulative return:  1.0348      winning rate:  0.7000
+[0:00:22.698075] 2015-02-27 excess return:  1.0285      cumulative return:  1.0644      winning rate:  0.8000
+[0:00:36.994951] 2015-03-31 excess return:  1.0949      cumulative return:  1.1654      winning rate:  0.9091
+[0:00:50.536079] 2015-04-30 excess return:  1.0705      cumulative return:  1.2475      winning rate:  0.7619
+[0:01:03.626321] 2015-05-29 excess return:  1.0876      cumulative return:  1.3568      winning rate:  0.7000
+[0:01:17.505793] 2015-06-30 excess return:  1.0785      cumulative return:  1.4633      winning rate:  0.7619
+[0:01:31.310690] 2015-07-31 excess return:  0.9715      cumulative return:  1.4216      winning rate:  0.4783
+[0:01:44.721175] 2015-08-31 excess return:  1.0837      cumulative return:  1.5406      winning rate:  0.7143
+[0:01:57.571873] 2015-09-30 excess return:  1.0834      cumulative return:  1.6692      winning rate:  0.8000
+[0:02:08.698180] 2015-10-30 excess return:  1.0556      cumulative return:  1.7620      winning rate:  0.8235
+[0:02:22.151156] 2015-11-30 excess return:  1.0829      cumulative return:  1.9080      winning rate:  0.8571
+[0:02:37.073490] 2015-12-31 excess return:  1.0576      cumulative return:  2.0178      winning rate:  0.8696
+[0:02:50.308765] 2016-01-29 excess return:  1.0337      cumulative return:  2.0859      winning rate:  0.7000
+[0:03:00.844664] 2016-02-29 excess return:  0.9994      cumulative return:  2.0846      winning rate:  0.5625
+[0:03:15.973547] 2016-03-31 excess return:  1.0320      cumulative return:  2.1514      winning rate:  0.6957
+[0:03:28.948861] 2016-04-29 excess return:  1.0368      cumulative return:  2.2305      winning rate:  0.9000
+[0:03:42.556517] 2016-05-31 excess return:  0.9961      cumulative return:  2.2219      winning rate:  0.4762
+[0:03:55.552427] 2016-06-30 excess return:  1.0388      cumulative return:  2.3082      winning rate:  0.9000
+[0:04:09.145955] 2016-07-29 excess return:  1.0318      cumulative return:  2.3817      winning rate:  0.7619
+[0:04:24.598239] 2016-08-31 excess return:  1.0280      cumulative return:  2.4484      winning rate:  0.7826
+
+         Sharpe      long     short  bp(hedged)    return        ir
+year                                                              
+2015  9.005327  2.691887  0.818824   29.349237  1.031793  0.567282
+2016  6.967989  0.136113 -0.125724   10.799757  0.300355  0.438942
+2017  3.832732 -0.064929 -0.191324    6.001086  0.156770  0.241439
+2018  5.829338 -0.157835 -0.331611    9.624070  0.262283  0.367214
+2019  5.593034  0.387889  0.188202    6.323506  0.166321  0.352328
+2020  2.337344  0.103369  0.057552    5.391913  0.044072  0.147239
+Avg.  5.803072  4.058093  0.080029   11.970439  3.697791  0.365559 
+
+            corr       bp      ir
+alpha032  0.6334   4.1913  0.1544
+alpha018  0.6281   6.7516  0.2031
+alpha003  0.6106   3.6539  0.1476
+alpha021  0.6058   9.9615  0.3041
+alpha022  0.5562  10.1820  0.2971
+alpha007  0.5478   5.6491  0.1354
+......
+alpha023  0.1710   6.8478  0.1923
+alpha011  0.1601   3.0224  0.0525
+alpha010  0.0879   2.8764  0.1443
+alpha026  0.0569   0.8369  0.0364
+alpha014  0.0210   2.9426  0.0794
+alpha027  0.0096   2.5283  0.1005
+```
+
+![sim pnl](/resource/multifactor.png)
+
