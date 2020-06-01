@@ -123,7 +123,7 @@ In order to reduce the risk exposure and take full advantage of the premium agai
 
 ```
 corr = pd.read_csv("poolCorr.csv", index_col=0)
-corr = corr.sort_values("alpha008", ascending=False)
+corr = corr.sort_values("#008", ascending=False)
 corr = corr[corr.index]
 corr.style.background_gradient(cmap='coolwarm').set_precision(3)
 ```
@@ -140,7 +140,7 @@ We can assign a dynamic weight to all our factor values, ideally it will have be
 
 
 ```
-(/home/highfort/.conda/KaiWork) highfort@f9f874b32b8e:~/project$ python portfolio.py
+(/home/highfort/.conda/KaiWork) highfort@f9f874b32b8e:~/project$ python ./utils/portfolio.py
 
 Welcome to Kate version 2.0.1 (2020-05-25)
 
