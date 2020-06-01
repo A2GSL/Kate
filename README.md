@@ -69,14 +69,6 @@ Basically, all you need to do is filling the alpha formula part. Then it will gi
 [0:00:36.007063] 2011-12-30 excess return:  0.9779      cumulative return:  1.5374      winning rate:  0.3636
 [0:00:37.207626] 2012-01-31 excess return:  1.0182      cumulative return:  1.5654      winning rate:  0.7333
 [0:00:38.972407] 2012-02-29 excess return:  1.0215      cumulative return:  1.5990      winning rate:  0.7143
-[0:00:40.725055] 2012-03-30 excess return:  1.0123      cumulative return:  1.6186      winning rate:  0.7273
-[0:00:42.015164] 2012-04-27 excess return:  1.0268      cumulative return:  1.6619      winning rate:  0.7647
-[0:00:43.768317] 2012-05-31 excess return:  1.0150      cumulative return:  1.6868      winning rate:  0.7273
-[0:00:45.383637] 2012-06-29 excess return:  0.9966      cumulative return:  1.6811      winning rate:  0.5000
-[0:00:47.270313] 2012-07-31 excess return:  0.9971      cumulative return:  1.6762      winning rate:  0.5455
-[0:00:49.174987] 2012-08-31 excess return:  1.0265      cumulative return:  1.7206      winning rate:  0.6522
-[0:00:50.854428] 2012-09-28 excess return:  1.0128      cumulative return:  1.7426      winning rate:  0.6500
-[0:00:52.406748] 2012-10-31 excess return:  1.0280      cumulative return:  1.7913      winning rate:  0.8889
 ......
 ```
 After the simulation, it will also report annual performance and correlation with existing alphas in the pool.
@@ -123,6 +115,7 @@ corr.style.background_gradient(cmap='coolwarm').set_precision(3)
 ```
 
 We poolCorr.py will generate a correlation matrix, that tells the correlation among your alpha factors.
+
 ![corr matrix](/resource/corrmat.png)
 
 
