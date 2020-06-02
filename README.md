@@ -20,7 +20,7 @@ Here a snippet of a simple alpha strategy based on [101 Formulaic](https://arxiv
 
 
 ```
-from KatePublic.Intraday.AlphaBase import *
+from Kate.Intraday.AlphaBase import *
 
 class Alpha(Intraday): 
 
