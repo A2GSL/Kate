@@ -196,3 +196,11 @@ alpha027  0.0096   2.5283  0.1005
 
 ![sim pnl](/resource/multifactor.png)
 
+## Maintainers
+
+[@kaiCbs](https://github.com/kaiCbs).
+
+
+## License
+
+[GNU General Public License](resource/GNU.txt)
