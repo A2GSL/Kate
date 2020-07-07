@@ -67,7 +67,7 @@ if __name__ == "__main__":
 Basically, all you need to do is filling the alpha formula part. Then it will give you the result on the fly.
 
 ```
-(/home/highfort/.conda/KaiWork) highfort@f9f874b32b8e:~/project$ python alphaPools/alpha20.py 
+(base) kai@f9f874b32b8e:~/project$ python alphaPools/alpha20.py 
 
 Welcome to Kate version 2.0.1 (2020-05-25)
 
@@ -144,7 +144,7 @@ We can assign a dynamic weight to all our factor values, ideally it will have be
 
 
 ```
-(/home/highfort/.conda/KaiWork) highfort@f9f874b32b8e:~/project$ python ./utils/portfolio.py
+(base)  kai@f9f874b32b8e:~/project$ python ./utils/portfolio.py
 
 Welcome to Kate version 2.0.1 (2020-05-25)
 

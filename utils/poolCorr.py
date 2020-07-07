@@ -2,8 +2,8 @@ import os
 import pandas as pd
 
 poolSize = len([f for f in os.listdir("alphaPools/") if f.endswith("py")])
-logfiles = [os.path.join("/home/highfort/project/logs", f) for f in sorted(os.listdir("logs/"), reverse=True)[:poolSize]]
-formulas = [os.path.join("/home/highfort/project/formulas", f) for f in sorted(os.listdir("formulas/"), reverse=True)[:poolSize]]
+logfiles = [os.path.join("/home/project/logs", f) for f in sorted(os.listdir("logs/"), reverse=True)[:poolSize]]
+formulas = [os.path.join("/home/project/formulas", f) for f in sorted(os.listdir("formulas/"), reverse=True)[:poolSize]]
 date = pd.read_csv(logfiles[0])["date"].values
 
 def getAlphaNum(filename):
@@ -14,7 +14,7 @@ def getAlphaNum(filename):
 
 for i in range(poolSize):
     log = pd.read_csv(logfiles[i])
-    log.to_csv("/home/highfort/project/alphaResults/{}.csv".format(getAlphaNum(formulas[i])))
+    log.to_csv("/home/project/alphaResults/{}.csv".format(getAlphaNum(formulas[i])))
     
     
 result = pd.DataFrame({getAlphaNum(formulas[i]): pd.read_csv(logfiles[i])["excess return"] for i in range(poolSize)}).sort_index(axis=1)
