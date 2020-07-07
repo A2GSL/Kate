@@ -133,14 +133,7 @@ Also, you can get a pnl curve and the drawdown during this period.
 
 In order to reduce the risk exposure and take full advantage of the premium against the market from evert single factor, but first of all, we want to the correlation among our factors as low as possible, so each of them might have a relatively high "marginal" contribution.
 
-```
-corr = pd.read_csv("poolCorr.csv", index_col=0)
-corr = corr.sort_values("#008", ascending=False)
-corr = corr[corr.index]
-corr.style.background_gradient(cmap='coolwarm').set_precision(3)
-```
-
-We poolCorr.py will generate a correlation matrix, that tells the correlation among our alpha factors.
+The poolCorr.py will generate a correlation matrix, that tells the correlation among our alpha factors.
 
 ![corr matrix](/resource/corrmat.png)
 
@@ -203,11 +196,3 @@ alpha027  0.0096   2.5283  0.1005
 
 ![sim pnl](/resource/multifactor.png)
 
-## Maintainers
-
-[@kaiCbs](https://github.com/kaiCbs).
-
-
-## License
-
-[GNU General Public License](resource/GNU.txt)
