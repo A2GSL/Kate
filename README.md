@@ -1,4 +1,4 @@
-![Logo](resource/logo.png)
+![Logo](resource/LOGO.png)
 
 # Kate 2.0
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/kaiCbs/StockOpt/blob/master/README.md)
@@ -9,7 +9,7 @@
 - [Background](#background)
 - [Install](#install)
 - [Usage](#usage)
-- [Multi-Factor Strategy Design](multi-factor-strategy-design)
+- [Multi-Factor Strategy Design](#multi-factor-strategy-design)
 - [Maintainers](#maintainers)
 - [License](#license)
 
@@ -203,3 +203,11 @@ alpha027  0.0096   2.5283  0.1005
 
 ![sim pnl](/resource/multifactor.png)
 
+## Maintainers
+
+[@kaiCbs](https://github.com/kaiCbs).
+
+
+## License
+
+[GNU General Public License](resource/GNU.txt)
