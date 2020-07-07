@@ -154,16 +154,16 @@ Welcome to Kate version 2.0.1 (2020-05-25)
 Copyright (C) 2020 Kai Xiang
 
 
-[0:00:12.941444] 2015-01-30 excess return:  1.0348      cumulative return:  1.0348      winning rate:  0.7000
-[0:00:22.698075] 2015-02-27 excess return:  1.0285      cumulative return:  1.0644      winning rate:  0.8000
-[0:00:36.994951] 2015-03-31 excess return:  1.0949      cumulative return:  1.1654      winning rate:  0.9091
-[0:00:50.536079] 2015-04-30 excess return:  1.0705      cumulative return:  1.2475      winning rate:  0.7619
-[0:01:03.626321] 2015-05-29 excess return:  1.0876      cumulative return:  1.3568      winning rate:  0.7000
-[0:01:17.505793] 2015-06-30 excess return:  1.0785      cumulative return:  1.4633      winning rate:  0.7619
-[0:01:31.310690] 2015-07-31 excess return:  0.9715      cumulative return:  1.4216      winning rate:  0.4783
-[0:01:44.721175] 2015-08-31 excess return:  1.0837      cumulative return:  1.5406      winning rate:  0.7143
-[0:01:57.571873] 2015-09-30 excess return:  1.0834      cumulative return:  1.6692      winning rate:  0.8000
-[0:02:08.698180] 2015-10-30 excess return:  1.0556      cumulative return:  1.7620      winning rate:  0.8235
+[0:00:12.941444] 2015-01-30 excess return:  1.034      cumulative return:  1.034      winning rate:  0.700
+[0:00:22.698075] 2015-02-27 excess return:  1.028      cumulative return:  1.064      winning rate:  0.800
+[0:00:36.994951] 2015-03-31 excess return:  1.094      cumulative return:  1.165      winning rate:  0.909
+[0:00:50.536079] 2015-04-30 excess return:  1.070      cumulative return:  1.247      winning rate:  0.761
+[0:01:03.626321] 2015-05-29 excess return:  1.087      cumulative return:  1.356      winning rate:  0.700
+[0:01:17.505793] 2015-06-30 excess return:  1.078      cumulative return:  1.463      winning rate:  0.761
+[0:01:31.310690] 2015-07-31 excess return:  0.971      cumulative return:  1.421      winning rate:  0.478
+[0:01:44.721175] 2015-08-31 excess return:  1.083      cumulative return:  1.540      winning rate:  0.714
+[0:01:57.571873] 2015-09-30 excess return:  1.083      cumulative return:  1.669      winning rate:  0.800
+[0:02:08.698180] 2015-10-30 excess return:  1.055      cumulative return:  1.762      winning rate:  0.823
 ......
 
 
